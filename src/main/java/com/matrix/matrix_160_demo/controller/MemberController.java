@@ -1,4 +1,4 @@
-package com.matrix.matrix_160_demo.nicatController;
+package com.matrix.matrix_160_demo.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
