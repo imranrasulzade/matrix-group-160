@@ -7,6 +7,7 @@ import com.matrix.matrix_160_demo.service.EmployeeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -31,5 +32,10 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public Employee update(Employee employee) {
         return employeRepository.save(employee);
+    }
+
+    @Override
+    public List<Employee> getAll() {
+        return employeRepository.findAll();
     }
 }
