@@ -1,7 +1,6 @@
 package com.matrix.matrix_160_demo.controller;
 
 import com.matrix.matrix_160_demo.entity.Employee;
-import com.matrix.matrix_160_demo.repositories.EmployeeRepository;
 import com.matrix.matrix_160_demo.service.EmployeeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
