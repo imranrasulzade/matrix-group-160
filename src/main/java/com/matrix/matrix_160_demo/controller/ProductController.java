@@ -1,2 +1,4 @@
-package com.matrix.matrix_160_demo.controller;public class ProductController {
+package com.matrix.matrix_160_demo.controller;
+
+public class ProductController {
 }
