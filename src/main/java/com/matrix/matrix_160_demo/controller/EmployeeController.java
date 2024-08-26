@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import javax.swing.text.html.HTML;
+import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -19,8 +20,10 @@ public class EmployeeController {
     public Optional<Employee> findById(@PathVariable Integer id) {
         return employeeService.findById(id);
     }
-
-    ;
+    @GetMapping()
+    public List<Employee> getAll(){
+        return employeeService.getAll();
+    }
 
     @PostMapping()
     @ResponseStatus(HttpStatus.CREATED)
