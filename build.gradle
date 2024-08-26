@@ -39,6 +39,17 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     implementation group: 'org.springdoc', name: 'springdoc-openapi-starter-webmvc-ui', version: '2.5.0'
+    implementation group:'org.springframework.boot', name:'spring-boot-starter-data-jpa',version :'3.1.2'
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    implementation group:'org.springframework.boot', name:'spring-boot-starter-jdbc',version :'3.2.4'
+    implementation group :'com.mysql',name:"mysql-connector-j",version:'8.3.0'
+    implementation group:'org.springframework.boot', name:'spring-boot-starter-data-jpa',version :'3.1.2'
 }
 
 tasks.named('test') {
