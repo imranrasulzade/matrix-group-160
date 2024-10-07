@@ -22,11 +22,11 @@ public class EmployeeController {
 
     ;
 
-    @PostMapping()
-    @ResponseStatus(HttpStatus.CREATED)
-    public Employee add(@RequestBody Employee employee) {
-        return employeeService.add(employee);
-    }
+//    @PostMapping()
+//    @ResponseStatus(HttpStatus.CREATED)
+//    public Employee add(@RequestBody Employee employee) {
+//        return employeeService.add(employee);
+//    }
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteById(@PathVariable Integer id){

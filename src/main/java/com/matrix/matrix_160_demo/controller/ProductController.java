@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @Controller
 @RequiredArgsConstructor
@@ -41,6 +42,13 @@ public class ProductController {
     @GetMapping
     public List<Product> getList() {
         return productService.getList();
+    }
+
+    @GetMapping("/filter")
+    public List<Product> getFiltered(@RequestParam Optional<String> branch,
+                                     @RequestParam Optional<String> colour,
+                                     @RequestParam Optional<String> status){
+        return productService.getFiltered(branch, colour, status);
     }
 
 }

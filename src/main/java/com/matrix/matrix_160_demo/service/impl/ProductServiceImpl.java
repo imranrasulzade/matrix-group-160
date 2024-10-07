@@ -7,10 +7,11 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-public class ProductServiceImple implements ProductService {
+public class ProductServiceImpl implements ProductService {
 
     private final ProductRepository productRepository;
 
@@ -38,5 +39,10 @@ public class ProductServiceImple implements ProductService {
     @Override
     public List<Product> getList() {
         return productRepository.findAll();
+    }
+
+    @Override
+    public List<Product> getFiltered(Optional<String> branch, Optional<String> colour, Optional<String> status) {
+        return null;
     }
 }
